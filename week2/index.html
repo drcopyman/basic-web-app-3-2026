@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>เรียนสัปดาห์ที่ 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</header>
+
+<body>
+    <div class="main-container">
+        <div class="nav-bar prompt-regular">
+            <a>ประวัติของฉัน</a>
+            <a>เพลงที่ชอบ</a>
+            <a
+                href="https://png.pngtree.com/background/20211216/original/pngtree-xiaguang-daytime-rape-flower-mountain-no-photography-picture-with-picture-picture-image_1539822.jpg">ไอดอลที่ชอบ</a>
+        </div>
+        <div class="image-container">
+            <img id="img-profile" src="https://avatars.githubusercontent.com/u/68768252?v=4">
+        </div>
+        <div class="text-center prompt-light">
+            <h1 id="text-fullname">นายณเดช คุกิมิเยอะมาก</h1>
+            <p>เป็นนักแสดงและนายแบบชาวไทยที่มีชื่อเสียงโด่งดังมาก มีผลงานการแสดงละครโทรทัศน์หลายเรื่อง เช่น “ธี่หยด”
+                โดยเขามักจะได้รับความสนใจจากแฟนคลับอยู่เสมอและมักจะถูกพบเจอได้ทั่วไป
+                ปัจจุบันเขากำลังฟิตซ้อมร่างกายเตรียมตัวเป็นเจ้าบ่าว</p>
+        </div>
+        <div class="image-container">
+            <button class="prompt-light" onclick="sayHi()">คลิกที่นี่ดูสิ</button>
+        </div>
+        <div>
+            <input placeholder="กรอกข้อมูล" type="color">
+        </div>
+    </div>
+    <script>
+        function sayHi() {
+            alert("สวัสดีครับ ท่านสมาชิก ชมรมคนชอบกาแฟ")
+            const textFullname = document.getElementById("text-fullname")
+            textFullname.innerText = "ท่านสมาชิก ชมรมคนชอบกาแฟ"
+
+            const imgElement = document.getElementById("img-profile")
+            imgElement.src = "https://tse3.mm.bing.net/th/id/OIP.uvsB9W4n2CnMWnopBqBIhQHaHf?rs=1&pid=ImgDetMain&o=7&rm=3"
+        }
+    </script>
+</body>
+
+</html>
